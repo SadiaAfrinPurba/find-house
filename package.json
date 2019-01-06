@@ -1,0 +1,23 @@
+{
+  "name": "find-house",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "index.js",
+  "scripts": {
+    
+    "compile:sass": "node-sass /home/afrin/Documents/Programming/Web/find-house/grid-challenge/main.scss /home/afrin/Documents/Programming/Web/find-house/grid-challenge/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SadiaAfrinPurba/find-house.git"
+  },
+  "author": "Purba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SadiaAfrinPurba/find-house/issues"
+  },
+  "homepage": "https://github.com/SadiaAfrinPurba/find-house#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
