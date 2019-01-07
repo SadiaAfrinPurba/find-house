@@ -1,0 +1,39 @@
+.features{
+    // background-color: $color-grey-light-2;
+    margin: 15rem 0;
+
+    //GRID LAYOUT-ITEM
+    grid-column: center-start / center-end;
+
+    //GRID LAYOUT-CONTAINER
+    display: grid;
+    // grid-template-columns: repeat(3,1fr); //no-responsive
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr)); //responsive
+    grid-gap: 6rem;
+    align-items: start;
+}
+
+//COMPONENT
+.feature{
+
+      //GRID LAYOUT-CONTAINER (to align the icon and heading)
+      display: grid;
+      grid-template-columns: min-content 1fr; //min-content for the svg icon
+      grid-row-gap: 1.5rem;
+      grid-column-gap: 2.5rem;
+
+    &__icon{
+       fill: $color-primary; //color change of svg image
+       width: 4.5rem;
+       height: 4.5rem;
+       transform: translateY(-1rem);
+
+       //GRID LAYOUT-ITEM
+       grid-row: 1 / span 2; //-1 wont work, cause -1 only works on explicit grid and here no row is declared
+
+    }
+
+    &__text{
+        font-size: 1.7rem;
+    }
+}

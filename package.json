@@ -4,8 +4,8 @@
   "description": "none",
   "main": "index.js",
   "scripts": {
-    
-    "compile:sass": "node-sass /home/afrin/Documents/Programming/Web/find-house/grid-challenge/main.scss /home/afrin/Documents/Programming/Web/find-house/grid-challenge/style.css -w"
+    "compile:sass": "node-sass /home/afrin/Documents/Programming/Web/find-house/sass/main.scss /home/afrin/Documents/Programming/Web/find-house/css/style.css -w"
+
   },
   "repository": {
     "type": "git",
