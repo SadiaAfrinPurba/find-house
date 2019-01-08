@@ -12,16 +12,26 @@
     grid-row-gap: 2rem;
     justify-items: center;
 
+    @media only screen and (max-width:$bp-medium){
+        grid-column: 1 / -1;
+     
+     }
+
     &__list{
 
         //GRID LAYOUT-CONTAINER
         display: grid;
-        grid-template-columns: min-content max-content;
+        grid-template-columns: min-content max-content; //img text
         grid-column-gap: 2rem;
         grid-row-gap: 5vh;
         align-items: center; //centering the h3 element
                              //does not effect other element cause the other elements are declaring the width of the grid
                              //video-121 10.00min
+        
+        @media only screen and (max-width:$bp-medium){
+            grid-template-columns:repeat(3,min-content max-content);
+
+       }
 
     }
 
@@ -31,9 +41,7 @@
       border-radius: 50%;
     }
 
-    &__detail{
-
-    }
+ 
 
     &__sold{
         text-transform: uppercase;
