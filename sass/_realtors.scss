@@ -1,6 +1,44 @@
 .realtors{
-    background-color: $color-grey-dark-1;
+    background-color: $color-secondary;
+    padding: 3rem;
 
     //GRID LAYOUT-ITEM
     grid-column: col-start 7 / full-end;
+
+    //GRID LAYOUT-CONTAINER
+    display: grid;
+    align-content: center; //centering the row and column tracks
+    justify-content: center;
+    grid-row-gap: 2rem;
+    justify-items: center;
+
+    &__list{
+
+        //GRID LAYOUT-CONTAINER
+        display: grid;
+        grid-template-columns: min-content max-content;
+        grid-column-gap: 2rem;
+        grid-row-gap: 5vh;
+        align-items: center; //centering the h3 element
+                             //does not effect other element cause the other elements are declaring the width of the grid
+                             //video-121 10.00min
+
+    }
+
+    &__img{
+      width: 7rem;
+      display: block;
+      border-radius: 50%;
+    }
+
+    &__detail{
+
+    }
+
+    &__sold{
+        text-transform: uppercase;
+        color: $color-grey-light-2;
+        margin-top: -3px;
+
+    }
 }
